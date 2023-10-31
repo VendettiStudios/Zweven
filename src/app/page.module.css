@@ -1,0 +1,6 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 200vh; /* Or adjust according to your layout */
+    overflow-x: hidden;
+}

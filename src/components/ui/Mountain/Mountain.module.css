@@ -1,0 +1,8 @@
+.mountain {
+    position: absolute;
+    z-index: 3;
+    flex-shrink: 0;
+    top:50%;
+    left:-110%;
+    /* Any other positioning or styling */
+  }

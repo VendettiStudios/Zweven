@@ -1,31 +1,74 @@
-.Image {
-    position: absolute;
-    top:-15%;;
-    width: 140vw;
-    height: 140vh;
+.Image{ 
     z-index:0;
+    position:absolute;
     overflow:hidden;
-    left: -200px; 
+    height:180vh;
+    top:-45vh;
+    left:-900px;
 }
-.hero {
-    position: absolute;
-    margin-left:10rem;
-    top: 30%;
-    z-index: 2;  /* Increase z-index if needed */
-    text-align: center;
-    color: black; /* Explicitly setting text color */
+.hero{
+    position:absolute;
+    z-index:1;
+    justify-content:center;
+    align-items:center;
     text-align:left;
-}
-.hero h1 {
-    font-size:48px;
-}
-.hero h2 {
-    font-size:32px;
+    top:10%;
+    margin-left:1.5rem;
+    margin-right:4rem;
 }
 .button{
-    background-color:#132B3F;
     color:white;
+    background-color:#132B3F;
+    display:flex;
+    align-items:center;
     border-radius:5px;
-    padding:10px;
-    height:40px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    height:45px;
+}
+.icon{
+    filter: invert(1);
+    margin-left:5px;
+    
+}
+.hero h1{
+font-size:26px;
+}
+.hero h2{
+    margin-top:-10px;
+    margin-bottom:40px;
+    font-size:15px;
+}
+
+@media (min-width:768px){
+.Image{
+    left:-31rem;
+    top:-55vh;
+}
+.hero {
+    margin-left:4rem;
+}
+.hero h1{
+    font-size:48px;
+}
+.hero h2{
+    font-size:18px;
+}
+}
+@media (min-width:1200px){
+.Image{
+    width:140vw;
+    left:-30rem;
+    top:-20vh;
+}
+.hero{
+margin-left:6rem;
+top:15%;
+}
+.hero h1{
+font-size:72px;
+}
+.hero h2{
+    margin-top:-3rem;
+    font-size:32px;
+}
 }

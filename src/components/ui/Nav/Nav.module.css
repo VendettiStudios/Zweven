@@ -1,44 +1,92 @@
-/* General Nav Styling */
+.wrapper{
+    width:100vw;
+}
 .nav {
-    height: 10vh;  /* Using viewport height */
+    height: 10vh;
     background: transparent;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding-top:20px;
-}
-
-.Image{
-    margin-top:-5px;
-}
-
-/* Logo Styling */
-.logo {
-    margin-left: 10rem;
-    font-size:44px;
+    justify-content: space-between; /* This will push items to both ends */
+  }
+  
+  /* Image Styling */
+  .Image {
+    margin-top: -5px;
+    margin-left:-.5rem;
+    width:40%;
+    height:40%;
+    display: flex;
+    filter: invert(44%) sepia(92%) saturate(5909%) hue-rotate(360deg)
+      brightness(70%) contrast(101%);
+      width:25%;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    margin-left: 1.5rem;
+    font-size: 24px;
     display: flex;
     align-items: center;
-    gap:10px;
-}
+    gap: 10px;
+  }
+  
+  /* Hamburger Styling */
+  .hamburger {
+    display: flex;
+    margin-right: 1.5rem;
+  }
+  
+  /* Link Styling */
 
 
-/* Link Styling */
-.links {
-  gap: 20px; /* Adjust this value to your needs */
-  margin-right: 10rem;
-  display: flex;
-  font-size:32px;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-/* Media Query for Smaller Screens */
-@media only screen and (max-width: 768px) {
-    .logo {
-        padding-left: 1rem;
-        padding-right: 0.5rem;
+  @media (max-width:768px){
+    .links {
+        display:none;
     }
+  }
+
+@media (min-width:768px){
+    /* CSS code for iPad mini and larger screens goes here */
+    .nav {
+    }
+    .Image {
+        width:30%;
+        height:30%;
+        margin-top:-1rem;
+        /* margin-left:.5rem; */
+    }
+    .logo {
+        margin-left:4rem;
+        font-size:28px;
+    }
+    .hamburger {
+        display:none;
+    }
+    .links {
+        display:flex;
+        gap:10px;
+        margin-right:4rem;
+        font-size:18px;
+    }
+}
+@media (min-width:1200px){
+    .nav{
+        margin-top:1rem;
+    }
+.Image {
+}
+.logo{
+    font-size:48px;
+    margin-left:6rem;
+}
+.links{
+    display:flex;
+    font-size:32px;
+    gap:30px;
+    margin-right:6rem;
+}
 }

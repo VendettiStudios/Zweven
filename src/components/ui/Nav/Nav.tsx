@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import s from './Nav.module.css';
-import { Bebas_Neue, Poppins } from 'next/font/google';
+import { Bebas_Neue, Poppins, Roboto, Lato } from 'next/font/google';
 const bebas_neue = Bebas_Neue({ weight: ['400'], subsets: ['latin'] })
-const poppins = Poppins({style:['normal'], weight: ['300'], subsets: ['latin'] });
+// const poppins = Poppins({style:['normal'], weight: ['300'], subsets: ['latin'] });
+const roboto = Roboto({style:['normal'], weight: ['300'], subsets: ['latin'] });
+// const lato = Lato({style:['normal'], weight: ['400'], subsets: ['latin'] });
 
 type Props = {};
 
@@ -17,7 +19,17 @@ const Nav = (props: Props) => {
                 height={80}
                 loading="eager"
             /></div>
-            <div className={`${s.links} ${poppins.className}`}>
+            <div className="hamburger">
+                <Image
+                className={s.hamburger}
+                src="/menu.png" 
+                alt="menu icon" 
+                width={50} 
+                height={50}
+                loading="eager"
+                 />
+            </div>
+            <div className={`${s.links} ${roboto.className}`}>
                 <p>Home</p>
                 <p>About</p>
                 <p>Shop</p>
