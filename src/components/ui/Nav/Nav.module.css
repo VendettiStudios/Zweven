@@ -1,0 +1,44 @@
+/* General Nav Styling */
+.nav {
+    height: 10vh;  /* Using viewport height */
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:20px;
+}
+
+.Image{
+    margin-top:-5px;
+}
+
+/* Logo Styling */
+.logo {
+    margin-left: 10rem;
+    font-size:44px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+
+/* Link Styling */
+.links {
+  gap: 20px; /* Adjust this value to your needs */
+  margin-right: 10rem;
+  display: flex;
+  font-size:32px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    .logo {
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+    }
+}

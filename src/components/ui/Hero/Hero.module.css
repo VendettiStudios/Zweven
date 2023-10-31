@@ -1,0 +1,31 @@
+.Image {
+    position: absolute;
+    top:-15%;;
+    width: 140vw;
+    height: 140vh;
+    z-index:0;
+    overflow:hidden;
+    left: -200px; 
+}
+.hero {
+    position: absolute;
+    margin-left:10rem;
+    top: 30%;
+    z-index: 2;  /* Increase z-index if needed */
+    text-align: center;
+    color: black; /* Explicitly setting text color */
+    text-align:left;
+}
+.hero h1 {
+    font-size:48px;
+}
+.hero h2 {
+    font-size:32px;
+}
+.button{
+    background-color:#132B3F;
+    color:white;
+    border-radius:5px;
+    padding:10px;
+    height:40px;
+}
