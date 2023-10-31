@@ -1,8 +1,25 @@
 .mountain {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     flex-shrink: 0;
-    top:50%;
+    top:40%;
     left:-110%;
     /* Any other positioning or styling */
   }
+
+  @media (min-width:768px){
+    .mountain {
+       top:45%;
+       left:-240%;
+        /* Any other positioning or styling */
+      }
+
+  }
+
+    @media (min-width:1200px){
+        .mountain{
+            height:50%;
+            top:55%;
+            left:-130%;
+        }
+    }
