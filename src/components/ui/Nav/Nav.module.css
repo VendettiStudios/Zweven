@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: space-between; /* This will push items to both ends */
   }
+  @media (max-height:767px) and (orientation: landscape) {
+    .nav{
+        height:15vh;
+    }
+    }
+    
   
   /* Image Styling */
   .Image {

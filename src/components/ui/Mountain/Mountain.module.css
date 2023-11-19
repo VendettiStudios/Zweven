@@ -1,25 +1,46 @@
 .mountain {
-    position: absolute;
-    z-index: 4;
-    flex-shrink: 0;
-    top:40%;
-    left:-110%;
-    /* Any other positioning or styling */
+    z-index: 2;
+    position: relative;
+    /* width: 100%; */
+    top:-120vh;
+    overflow:hidden;
   }
-
-  @media (min-width:768px){
+  @media(max-height:500px) {
     .mountain {
-       top:45%;
-       left:-240%;
-        /* Any other positioning or styling */
-      }
-
+        top:-50vh;
+    }
   }
 
-    @media (min-width:1200px){
-        .mountain{
-            height:50%;
-            top:55%;
-            left:-130%;
-        }
+  @media(min-height:750px){
+    .mountain {
+        top: -110vh;
     }
+  }
+
+@media (max-height:767px) and (orientation: landscape) {
+   .mountain {
+    top:-150vh;
+    }
+   }
+  
+
+
+  @media (min-width: 768px) {
+    .mountain {
+      min-height: 60vh; /* Adjust based on your design */
+      top:-95vh;
+    }
+  }
+  @media(min-height: 350px){
+    .mountain{
+        /* top:-50vh; */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .mountain {
+        top:-100vh;
+      min-height: 70vh; /* Adjust based on your design */
+    }
+  }
+  

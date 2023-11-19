@@ -1,9 +1,9 @@
 .Image{ 
     z-index:0;
-    position:absolute;
-    overflow:hidden;
-    height:180vh;
-    top:-45vh;
+    position:relative;
+    /* overflow:hidden; */
+    top:-70vh;
+    height:200vh;
     left:-900px;
 }
 .hero{
@@ -12,10 +12,19 @@
     justify-content:center;
     align-items:center;
     text-align:left;
-    top:10%;
+    top:4%;
     margin-left:1.5rem;
     margin-right:4rem;
 }
+
+@media (max-height:767px) and (orientation: landscape) {
+    .Image{
+        top:-50vh;
+    }
+    .hero{
+        height:15vh;
+    }
+    }
 .button{
     color:white;
     background-color:#132B3F;
@@ -42,7 +51,7 @@ font-size:26px;
 @media (min-width:768px){
 .Image{
     left:-31rem;
-    top:-55vh;
+    top:-30vh;
 }
 .hero {
     margin-left:4rem;
@@ -56,13 +65,13 @@ font-size:26px;
 }
 @media (min-width:1200px){
 .Image{
-    width:140vw;
-    left:-30rem;
-    top:-20vh;
+    width:145vw;
+    /* left:-30rem;*/
+    top:-30vh; 
 }
 .hero{
 margin-left:6rem;
-top:15%;
+top:8%;
 }
 .hero h1{
 font-size:72px;

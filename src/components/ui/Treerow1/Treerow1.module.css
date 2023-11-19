@@ -1,29 +1,19 @@
 .tree {
-   position: absolute;
-    z-index: 5; /* Higher than mountain's z-index */
-    top: 53%;
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100vh;
-    width: 300vw;
-
-    /* Any other positioning or styling */
+    z-index: 3;
+    position: relative;
+    /* width: 100%; */
+    bottom: -5vh;
   }
-
-  @media (min-width:768px){
+  
+  @media (min-width: 768px) {
     .tree {
-       top:40%;
-       /* left:-240%; */
-        /* Any other positioning or styling */
-      }
-
-  }
-
-    @media (min-width:1200px){
-        .tree{
-            height:190vh;
-            top:30%;
-            /* left:-130%; */
-        }
+      /* Adjust as necessary for different breakpoints */
     }
+  }
+  
+  @media (min-width: 1200px) {
+    .tree {
+      /* Adjust as necessary for different breakpoints */
+    }
+  }
+  

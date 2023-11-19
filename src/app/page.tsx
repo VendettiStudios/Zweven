@@ -8,7 +8,7 @@ export default function Home() {
     <main className={styles.main}>
     <Hero />
     <Mountain/>
-    <Treerow1/>
+    <Treerow1/> 
     </main>
   )
 }

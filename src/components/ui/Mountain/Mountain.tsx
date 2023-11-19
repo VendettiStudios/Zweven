@@ -3,7 +3,6 @@ import s from './Mountain.module.css';
 const Mountain = () => {
     return (
         <div>
-            <h1>Mountain Component</h1>
             <Image
                 className={s.mountain}
                 src="/j.svg"
